@@ -1,0 +1,288 @@
+* {
+  font-family: "Poppins", "sans-serif";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #3a6cf4;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #3a6cf4;
+  font-weight: 500;
+  padding-left: 30px;
+}
+
+.navigation a:hover {
+  color: #601cfc;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(images/image.jpg) no-repeat;
+  background-color: #4e3588;
+  background-size: 650px;
+  background-position: center right;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color: #F2E8E4;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #201f1e;
+  font-size: 3cm;
+  font-weight: 600;
+}
+
+.main h3 {
+  color: #F2E8E4;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  color: #F2E8E4;
+  background-color: #F23A29;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.93752em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin: 0 0 40px 0;
+  transition: 0.7s;
+}
+
+.main-btn:hover {
+  background-color: #F29F05;
+  transform: scale(1.1);
+}
+
+.social-icons a {
+  color: #F2E8E4;
+  font-size: 1.7em;
+  padding: 0 0 0 120px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #3a6cf4;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+  text-decoration: none;
+  
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon{
+  color: #3a5cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info{
+  text-align: center;
+}
+
+.info h3{
+  color: #3a5cf4;
+  font-size: 1.7em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.projects{
+  background-color: #4e3588;
+}
+
+projects .content{
+  margin-top: 30px;
+}
+
+.projects-card{
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.projects-card:hover{
+  transform: scale(1.1);
+}
+
+.projects-card:hover .projecte-imag{
+  opacity: 0.9;
+}
+
+.projecte-imag img{
+  width: 100%;
+}
+
+.project-info{
+  padding: 1em;
+}
+
+.project-category{
+  font-size: 0.8em;
+  color: #000;
+}
+
+.project-title{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 800;
+  margin-top: 10px;
+}
+
+.mor-datails{
+  text-decoration: none;
+  color: #3a6cf4;
+}
+
+.mor-datails:hover{
+  color: #601cfc;
+}
+
+.contakt .icon{
+  font-size: 4.5em;
+}
+
+.contakt .info .h3{
+  color: #000;
+}
+
+.contakt .p{
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navigation a {
+    padding-left: 15px;
+    font-size: 1em;
+  }
+
+  section {
+    padding: 100px 5%;
+  }
+
+  .main {
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .main h2 span {
+    font-size: 2cm;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .icon {
+    font-size: 5em;
+  }
+
+  .social-icons a {
+    font-size: 1.5em;
+    padding: 0 0 0 60px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .main h2 span {
+    font-size: 1.5cm;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .icon {
+    font-size: 4em;
+  }
+
+  .main-btn {
+    font-size: 0.9em;
+    padding: 0.8em 1.8em;
+  }
+
+  .social-icons a {
+    font-size: 1.2em;
+    padding: 0 0 0 40px;
+  }
+}
